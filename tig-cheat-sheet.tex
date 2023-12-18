@@ -3,6 +3,7 @@
 \usepackage{ifthen}
 \usepackage[landscape]{geometry}
 \usepackage{hyperref}
+\usepackage[subtle]{savetrees}
 
 % Build a pdf online with:
 % http://latex.informatik.uni-halle.de/latex-online/latex.php?spw=2&id=626837_hRLskRF34GHL
@@ -77,10 +78,10 @@
 
 \section{Switch between views}
 \begin{tabular}{@{}ll ll ll@{}}
-\verb!m! & \verb!Main!. & \verb!p! & \verb!Pager!. & \verb!t! & \verb!Directory! tree.\\
-\verb!d! & \verb!Diff!. & \verb!r! & \verb!Refs!. & \verb!f! & \verb!File! blob.\\
-\verb!l! & \verb!Log!. & \verb!S! & \verb!Status!. & \verb!y! & \verb!Stash!.\\
-\verb!B! & \verb!Blame!. & \verb!c! & \verb!Stage!. & \verb!h! & \verb!Help!.\\
+\verb!m! & Main. & \verb!p! & Pager. & \verb!t! & Directory tree.\\
+\verb!d! & Diff. & \verb!r! & Refs. & \verb!f! & File blob.\\
+\verb!l! & Log. & \verb!S! & Status. & \verb!y! & Stash.\\
+\verb!B! & Blame. & \verb!c! & Stage. & \verb!h! & Help.\\
 \end{tabular}
 
 \section{Cursor Navigation}
@@ -165,6 +166,13 @@
 \section{Stage View (c)}
 \begin{tabular}{@{}lp{6.5cm}@{}}
 \verb!u! & Stage only chunk for next commit (on a diff chunk), otherwise stage all changes. \\
+\end{tabular}
+
+\section{Stash View (c)}
+\begin{tabular}{@{}lp{6.5cm}@{}}
+\verb!A! & Apply selected stash \\
+\verb!P! & Pop selected stash \\
+\verb#!# & Drop selected stash \\
 \end{tabular}
 
 \section{Tree View (t)}
