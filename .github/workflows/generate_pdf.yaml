@@ -1,5 +1,5 @@
 name: Generate PDF document from TeX
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   build_pdf_from_tex:
     runs-on: ubuntu-latest
